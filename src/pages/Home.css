@@ -6,6 +6,41 @@
   justify-content: center;
   padding: 2rem;
   background-color: #f5f5f5;
+  position: relative;
+}
+
+.welcome-message {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message span {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.logout-btn {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #e0e0e0;
 }
 
 .home h1 {
@@ -24,6 +59,13 @@
   color: #666;
 }
 
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.login-btn,
 .signup-btn {
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -35,6 +77,7 @@
   transition: background-color 0.3s;
 }
 
+.login-btn:hover,
 .signup-btn:hover {
   background-color: #333;
 }
